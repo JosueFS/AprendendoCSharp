@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Reflection;
 
+//Herança
+//Sobrecarga de construtores herdados
+//Classes Abstratas
 namespace ClassesC
 {
     class Program
