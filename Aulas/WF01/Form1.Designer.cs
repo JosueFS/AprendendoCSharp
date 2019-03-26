@@ -42,11 +42,12 @@
             this.Estado = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btAddTime = new System.Windows.Forms.Button();
             this.btDelTime = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(265, 330);
+            this.button1.Location = new System.Drawing.Point(324, 335);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 10;
@@ -57,13 +58,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(171, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(265, 25);
+            this.label1.Size = new System.Drawing.Size(263, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "ESTAGIO 2019 - GEOPOST";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -82,12 +83,14 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox1.Location = new System.Drawing.Point(12, 301);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(101, 17);
+            this.checkBox1.Size = new System.Drawing.Size(98, 17);
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Ordem Aleatória";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.UseVisualStyleBackColor = false;
             // 
             // comboBox1
             // 
@@ -129,6 +132,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Location = new System.Drawing.Point(135, 49);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
@@ -146,9 +151,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(13, 48);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 13);
+            this.label3.Size = new System.Drawing.Size(34, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Time";
             // 
@@ -160,9 +168,9 @@
             this.Estado});
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(366, 49);
+            this.listView1.Location = new System.Drawing.Point(324, 49);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(200, 280);
+            this.listView1.Size = new System.Drawing.Size(250, 280);
             this.listView1.TabIndex = 8;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -171,12 +179,12 @@
             // Times
             // 
             this.Times.Text = "Times";
-            this.Times.Width = 90;
+            this.Times.Width = 115;
             // 
             // Estado
             // 
             this.Estado.Text = "Estado";
-            this.Estado.Width = 105;
+            this.Estado.Width = 130;
             // 
             // btAddTime
             // 
@@ -208,6 +216,18 @@
             this.btDelTime.UseVisualStyleBackColor = false;
             this.btDelTime.Click += new System.EventHandler(this.btDelTime_Click);
             // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(13, 89);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(296, 20);
+            this.label4.TabIndex = 11;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,6 +235,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.BackgroundImage = global::WF01.Properties.Resources.bgMain;
             this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btDelTime);
             this.Controls.Add(this.btAddTime);
             this.Controls.Add(this.listView1);
@@ -253,6 +274,7 @@
         private System.Windows.Forms.ColumnHeader Estado;
         private System.Windows.Forms.Button btAddTime;
         private System.Windows.Forms.Button btDelTime;
+        private System.Windows.Forms.Label label4;
     }
 }
 

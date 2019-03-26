@@ -13,7 +13,7 @@ namespace WF01
 {
     public partial class Form1 : Form
     {
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -34,7 +34,7 @@ namespace WF01
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -54,23 +54,31 @@ namespace WF01
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btAddTime_Click(object sender, EventArgs e)
         {
+            //Captura os time digitado e o estado selecionado
             string time = txtTime.Text;
             string estado = comboBox1.Text;
-            if (comboBox1.FindStringExact(estado) >= 0){
-                ListViewItem times = new ListViewItem(new[] { time, estado });
-                listView1.Items.Add(times);
-                Select(true, true);
+
+            //Verifica se o estado digitado está na lista, caso true, executa o bloco
+            if (comboBox1.FindStringExact(estado) >= 0) {
+                ListViewItem dadosTime = new ListViewItem(new[] { time, estado });
+                if (DuplicateItem(time, estado))
+                {
+                    listView1.Items.Add(dadosTime);
+                    Select(true, true);
+                }
             }
+
+            
         }
 
         private void btDelTime_Click(object sender, EventArgs e)
@@ -82,10 +90,30 @@ namespace WF01
 
         private void btAddTime_KeyDown(object sender, KeyEventArgs e)
         {
-            if((Keys)e.KeyCode == Keys.Enter)
+            if ((Keys)e.KeyCode == Keys.Enter)
             {
                 btAddTime_Click(sender, e);
             }
+        }
+
+        //Função para verificar se o time já está na lista
+        private bool DuplicateItem(string a, string b) {
+            foreach (ListViewItem item in listView1.Items)
+            {
+                if (item.Text == a && item.SubItems[1].Text == b) {
+                    label4.ForeColor = Color.Red;
+                    label4.Text = ("Time já está na lista e não poderá ser incluído.");
+                    return false;
+                }
+            }
+            label4.ForeColor = Color.DarkGreen;
+            label4.Text = ("Time adicionado com sucesso!");
+            return true;
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
