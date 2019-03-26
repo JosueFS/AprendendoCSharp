@@ -6,7 +6,8 @@ namespace ClassesD
 {
     class Ave : Animal
     {
-        public void EmitirSom()
+        //SobreEscrita do método
+        public new void EmitirSom()
         {
             Console.WriteLine("Piu, Piu");
         }

@@ -7,7 +7,7 @@ namespace ClassesD
     class Mamifero : Animal
     {
         //SobreEscrita do método
-        public void EmitirSom()
+        public new void EmitirSom()
         {
             Console.WriteLine("Au, Au, Au");
         }
