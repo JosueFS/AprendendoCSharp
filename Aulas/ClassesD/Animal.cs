@@ -4,8 +4,10 @@ using System.Text;
 
 namespace ClassesD
 {
-    abstract class Animal
+    public abstract class Animal
     {
-        public void emitirSom() { Console.WriteLine("Default"); }
+        public void emitirSom() {
+            Console.WriteLine("Default");
+        }
     }
 }
