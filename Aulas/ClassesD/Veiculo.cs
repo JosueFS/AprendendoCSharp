@@ -6,12 +6,12 @@ namespace ClassesD
     {
         public virtual void Mover()
         {
-            throw new NotImplementedException();
+            
         }
 
         public virtual void Parar()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

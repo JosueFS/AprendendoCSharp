@@ -34,10 +34,7 @@ namespace WF01
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string time = textBox1.Text;
-            string estado = comboBox1.Text;
-            ListViewItem times = new ListViewItem(new[] { time, estado });
-            listView1.Items.Add(times);
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -57,12 +54,38 @@ namespace WF01
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void TextBox1_TextChanged(object sender, EventArgs e)
         {
+            
+        }
 
+        private void btAddTime_Click(object sender, EventArgs e)
+        {
+            string time = txtTime.Text;
+            string estado = comboBox1.Text;
+            if (comboBox1.FindStringExact(estado) >= 0){
+                ListViewItem times = new ListViewItem(new[] { time, estado });
+                listView1.Items.Add(times);
+                Select(true, true);
+            }
+        }
+
+        private void btDelTime_Click(object sender, EventArgs e)
+        {
+            foreach (ListViewItem item in listView1.Items)
+                if (item.Selected)
+                    listView1.Items.Remove(item);
+        }
+
+        private void btAddTime_KeyDown(object sender, KeyEventArgs e)
+        {
+            if((Keys)e.KeyCode == Keys.Enter)
+            {
+                btAddTime_Click(sender, e);
+            }
         }
     }
 }

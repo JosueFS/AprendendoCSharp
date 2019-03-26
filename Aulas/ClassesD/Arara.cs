@@ -11,7 +11,7 @@ namespace ClassesD
 
         public override void Mover()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

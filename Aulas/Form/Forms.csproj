@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EBD6147C-40EB-4DB3-89C2-E87335318BE1}</ProjectGuid>
+    <ProjectGuid>{D77AD712-1A9A-41C9-9A77-9F452BD70FAE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WF01</RootNamespace>
-    <AssemblyName>WF01</AssemblyName>
+    <RootNamespace>Form</RootNamespace>
+    <AssemblyName>Form</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,9 +54,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -65,7 +62,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -79,18 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\soccer-stadium-background-vector-18910520.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\checked.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cancel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

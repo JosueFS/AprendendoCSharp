@@ -63,9 +63,9 @@ namespace WF01.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1 {
+        internal static System.Drawing.Bitmap bgMain {
             get {
-                object obj = ResourceManager.GetObject("1", resourceCulture);
+                object obj = ResourceManager.GetObject("bgMain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,29 @@ namespace WF01.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap soccer_stadium_background_vector_18910520 {
+        internal static System.Drawing.Bitmap bgOriginal {
             get {
-                object obj = ResourceManager.GetObject("soccer-stadium-background-vector-18910520", resourceCulture);
+                object obj = ResourceManager.GetObject("bgOriginal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cancel {
+            get {
+                object obj = ResourceManager.GetObject("Cancel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OK {
+            get {
+                object obj = ResourceManager.GetObject("OK", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

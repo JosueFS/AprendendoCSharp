@@ -19,7 +19,8 @@ namespace ClassesD
 
             Cavalo c = new Cavalo();
             c.EmitirSom();
-            
+
+            Console.WriteLine(Animal.qtdAnimais);
 
             Console.ReadKey();
         }

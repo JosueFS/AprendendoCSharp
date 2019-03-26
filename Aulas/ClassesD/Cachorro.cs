@@ -6,12 +6,12 @@ namespace ClassesD
     {
         public override void EmitirSom()
         {
-            throw new NotImplementedException();
+            
         }
 
         public override void Mover()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
