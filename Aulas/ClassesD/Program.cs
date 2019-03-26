@@ -9,10 +9,10 @@ namespace ClassesD
         static void Main(string[] args)
         {
             Ave a = new Ave();
-            a.emitirSom();
+            a.EmitirSom();
 
             Mamifero m = new Mamifero();
-            m.emitirSom();
+            m.EmitirSom();
 
             Console.ReadKey();
         }

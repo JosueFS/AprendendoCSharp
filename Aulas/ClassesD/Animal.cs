@@ -6,7 +6,7 @@ namespace ClassesD
 {
     public abstract class Animal
     {
-        public void emitirSom() {
+        public void EmitirSom() {
             Console.WriteLine("Default");
         }
     }

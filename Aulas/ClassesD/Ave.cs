@@ -6,7 +6,7 @@ namespace ClassesD
 {
     class Ave : Animal
     {
-        public void emitirSom()
+        public void EmitirSom()
         {
             Console.WriteLine("Piu, Piu");
         }
