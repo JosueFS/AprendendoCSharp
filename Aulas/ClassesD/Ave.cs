@@ -4,12 +4,7 @@ using System.Text;
 
 namespace ClassesD
 {
-    class Ave : Animal
+    public class Ave : Animal
     {
-        //SobreEscrita do método
-        public new void EmitirSom()
-        {
-            Console.WriteLine("Piu, Piu");
-        }
     }
 }

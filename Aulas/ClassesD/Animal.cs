@@ -6,8 +6,13 @@ namespace ClassesD
 {
     public abstract class Animal
     {
-        public void EmitirSom() {
+        public virtual void EmitirSom() {
             Console.WriteLine("Default");
+        }
+
+        public virtual void Mover()
+        {
+            throw new NotImplementedException();
         }
     }
 }
