@@ -47,12 +47,19 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(324, 335);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.Location = new System.Drawing.Point(324, 331);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 28);
             this.button1.TabIndex = 10;
             this.button1.Text = "Gerar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
@@ -72,9 +79,10 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.Location = new System.Drawing.Point(532, 340);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(40, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(45, 16);
             this.linkLabel1.TabIndex = 2;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "GitHub";
@@ -85,15 +93,17 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.Transparent;
             this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(12, 301);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(98, 17);
+            this.checkBox1.Size = new System.Drawing.Size(130, 20);
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Ordem Aleatória";
             this.checkBox1.UseVisualStyleBackColor = false;
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Acre",
@@ -123,9 +133,9 @@
             "São Paulo",
             "Sergipe",
             "Tocantins"});
-            this.comboBox1.Location = new System.Drawing.Point(133, 65);
+            this.comboBox1.Location = new System.Drawing.Point(126, 60);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(133, 24);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -134,17 +144,19 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Location = new System.Drawing.Point(135, 49);
+            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(129, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.Size = new System.Drawing.Size(52, 16);
             this.label2.TabIndex = 5;
             this.label2.Text = "Estado";
             // 
             // txtTime
             // 
-            this.txtTime.Location = new System.Drawing.Point(12, 65);
+            this.txtTime.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTime.Location = new System.Drawing.Point(12, 60);
             this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(111, 20);
+            this.txtTime.Size = new System.Drawing.Size(111, 23);
             this.txtTime.TabIndex = 0;
             this.txtTime.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
@@ -153,10 +165,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 48);
+            this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(15, 40);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.Size = new System.Drawing.Size(37, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "Time";
             // 
@@ -166,6 +178,7 @@
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Times,
             this.Estado});
+            this.listView1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(324, 49);
@@ -193,10 +206,10 @@
             this.btAddTime.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btAddTime.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(186)))), ((int)(((byte)(124)))));
             this.btAddTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btAddTime.Location = new System.Drawing.Point(265, 66);
+            this.btAddTime.Location = new System.Drawing.Point(263, 60);
             this.btAddTime.Margin = new System.Windows.Forms.Padding(1);
             this.btAddTime.Name = "btAddTime";
-            this.btAddTime.Size = new System.Drawing.Size(20, 20);
+            this.btAddTime.Size = new System.Drawing.Size(23, 23);
             this.btAddTime.TabIndex = 2;
             this.btAddTime.UseVisualStyleBackColor = false;
             this.btAddTime.Click += new System.EventHandler(this.btAddTime_Click);
@@ -208,10 +221,10 @@
             this.btDelTime.BackgroundImage = global::WF01.Properties.Resources.Cancel;
             this.btDelTime.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btDelTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btDelTime.Location = new System.Drawing.Point(289, 66);
+            this.btDelTime.Location = new System.Drawing.Point(289, 60);
             this.btDelTime.Margin = new System.Windows.Forms.Padding(0);
             this.btDelTime.Name = "btDelTime";
-            this.btDelTime.Size = new System.Drawing.Size(20, 20);
+            this.btDelTime.Size = new System.Drawing.Size(23, 23);
             this.btDelTime.TabIndex = 3;
             this.btDelTime.UseVisualStyleBackColor = false;
             this.btDelTime.Click += new System.EventHandler(this.btDelTime_Click);
@@ -220,10 +233,11 @@
             // 
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(13, 89);
+            this.label4.Location = new System.Drawing.Point(13, 90);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(296, 20);
+            this.label4.Size = new System.Drawing.Size(299, 23);
             this.label4.TabIndex = 11;
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label4.Click += new System.EventHandler(this.label4_Click);

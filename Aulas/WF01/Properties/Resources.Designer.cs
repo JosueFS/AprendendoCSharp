@@ -63,6 +63,16 @@ namespace WF01.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _unchecked {
+            get {
+                object obj = ResourceManager.GetObject("unchecked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bgMain {
             get {
                 object obj = ResourceManager.GetObject("bgMain", resourceCulture);

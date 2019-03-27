@@ -92,5 +92,8 @@
   <ItemGroup>
     <None Include="Resources\cancel.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unchecked.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

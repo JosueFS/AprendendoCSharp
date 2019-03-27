@@ -69,13 +69,18 @@ namespace WF01
             string estado = comboBox1.Text;
 
             //Verifica se o estado digitado está na lista, caso true, executa o bloco
-            if (comboBox1.FindStringExact(estado) >= 0) {
+            if (comboBox1.FindStringExact(estado) >= 0 && time != null && estado != null) {
                 ListViewItem dadosTime = new ListViewItem(new[] { time, estado });
                 if (DuplicateItem(time, estado))
                 {
                     listView1.Items.Add(dadosTime);
                     Select(true, true);
                 }
+            }
+            else
+            {
+                label4.ForeColor = Color.Red;
+                label4.Text = "Verifique os dados inseridos.";
             }
 
             
