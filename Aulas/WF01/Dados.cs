@@ -146,6 +146,21 @@ namespace WF01
                                 GolsFora = Gols(0, 6),
                                 Local = t[z].Local
                         });
+                        if (GolsCasa > GolsFora)
+                        {
+                            t[z].Vitorias++;
+                            t[qtd - 1 - z].Derrotas++;
+                        }
+                        else if(GolsCasa < GolsFora)
+                        {
+                            t[z].Derrotas++;
+                            t[qtd - 1 - z].Vitorias++;
+                        }
+                        else if (GolsCasa == GolsFora)
+                        {
+                            t[z].Empates++;
+                            t[qtd - 1 - z].Empates++;
+                        }
                     }
                 }
                 t.Add(t[0]);
@@ -175,5 +190,20 @@ namespace WF01
             }
             return 0;
         }
+
+        //private void Pontos(List<List<Jogos>> turno, List<Times> t)
+        //{
+        //    foreach (var rodada in turno)
+        //    {
+        //        foreach (var jogo in rodada)
+        //        {
+        //            if (jogo.GolsCasa > jogo.GolsFora)
+        //            {
+        //                int indexT = t.FindIndex(x => x.Nome == jogo.Casa && x.Local == item.SubItems[1].Text);
+        //                t[Array.IndexOf(t, jogo.Casa)].Vitorias++;
+        //            }
+        //        }
+        //    }
+        //}
     }
 }
