@@ -38,7 +38,7 @@ namespace WF01
                     lblCasa.Text = jogo.Casa;
                     lblPlacar.Text = jogo.GolsCasa.ToString() + " X " + jogo.GolsFora.ToString();
                     lblFora.Text = jogo.Fora;
-                    lblLocal.Text = jogo.Local;
+                    lblLocal.Text = "Local" + jogo.Local;
 
                     //Posicionando os Labels
                     lblCasa.Left = PosX;
@@ -128,6 +128,12 @@ namespace WF01
         public List<List<Jogos>> CriarJogos(List<List<Jogos>> j, List<Times> t)
         {
             int qtd = t.Count;
+            if (qtd % 2 == 1)
+            {
+                t.Add(new Times { Nome = "-" });
+                qtd++;
+            }
+            
             for (int y = 0; y < qtd - 1; y++) {
                 j.Add(new List<Jogos>());
                 for (int z = 0; z < qtd / 2; z++) {
@@ -138,10 +144,12 @@ namespace WF01
                                 GolsCasa = Gols(0, 6),
                                 Fora = t[qtd - 1 - z].Nome,
                                 GolsFora = Gols(0, 6),
-                                Local = "Local: " + t[z].Local
+                                Local = t[z].Local
                         });
                     }
                 }
+                t.Add(t[0]);
+                t.RemoveAt(0);
             }
             return j;
         }
