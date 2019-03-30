@@ -29,11 +29,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassesC", "ClassesC\Classe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassesD", "ClassesD\ClassesD.csproj", "{CB2F55A6-CC56-4A3B-B790-A9FAAE60C8F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesE", "ClasseE\ClassesE.csproj", "{001E0D14-DC73-4E87-9FEF-E5C3984E0FFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassesE", "ClasseE\ClassesE.csproj", "{001E0D14-DC73-4E87-9FEF-E5C3984E0FFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesF", "ClassesF\ClassesF.csproj", "{A73BDCE3-6F2B-4B2F-9D44-1A38E4654C9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassesF", "ClassesF\ClassesF.csproj", "{A73BDCE3-6F2B-4B2F-9D44-1A38E4654C9B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forms", "Forms\Forms.csproj", "{3B8B565D-8D4B-4352-9990-5AD390DA676C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementosAutomaticos", "ElementosAutomaticos\ElementosAutomaticos.csproj", "{74509C26-C4FF-4F13-BAF0-44779122BD2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{3B8B565D-8D4B-4352-9990-5AD390DA676C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B8B565D-8D4B-4352-9990-5AD390DA676C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B8B565D-8D4B-4352-9990-5AD390DA676C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74509C26-C4FF-4F13-BAF0-44779122BD2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74509C26-C4FF-4F13-BAF0-44779122BD2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74509C26-C4FF-4F13-BAF0-44779122BD2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74509C26-C4FF-4F13-BAF0-44779122BD2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
