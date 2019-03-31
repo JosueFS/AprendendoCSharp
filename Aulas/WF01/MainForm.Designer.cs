@@ -76,7 +76,7 @@
             this.lblTitulo.Location = new System.Drawing.Point(11, 9);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(331, 37);
+            this.lblTitulo.Size = new System.Drawing.Size(313, 37);
             this.lblTitulo.TabIndex = 1;
             this.lblTitulo.Text = "ESTAGIO 2019 - GEOhub";
             // 
@@ -277,7 +277,6 @@
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(866, 502);
             this.Controls.Add(this.lblMsg);
             this.Controls.Add(this.btDelTime);
@@ -298,8 +297,6 @@
             this.MaximumSize = new System.Drawing.Size(892, 784);
             this.MinimumSize = new System.Drawing.Size(742, 500);
             this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Liga GEOhub 2019";
             this.TransparencyKey = System.Drawing.Color.LightCyan;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);

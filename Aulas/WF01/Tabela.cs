@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ESTAGIO
 {
-    public partial class Tabela : Form
+    public partial class Tabela : MetroFramework.Forms.MetroForm
     {
         Elements elm = new Elements();
 

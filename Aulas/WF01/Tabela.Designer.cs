@@ -41,6 +41,7 @@
             this.Vitorias = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Empates = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Derrotas = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbCup)).BeginInit();
@@ -52,10 +53,10 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.HotTrack = true;
-            this.tabControl1.Location = new System.Drawing.Point(0, -1);
+            this.tabControl1.Location = new System.Drawing.Point(-1, 49);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(863, 502);
+            this.tabControl1.Size = new System.Drawing.Size(864, 452);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -66,7 +67,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(100, 3, 3, 3);
-            this.tabPage1.Size = new System.Drawing.Size(855, 464);
+            this.tabPage1.Size = new System.Drawing.Size(856, 414);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Rodadas";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -83,7 +84,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(855, 464);
+            this.tabPage2.Size = new System.Drawing.Size(856, 414);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Classificação";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -100,7 +101,7 @@
             // lblPrize
             // 
             this.lblPrize.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrize.Location = new System.Drawing.Point(432, 405);
+            this.lblPrize.Location = new System.Drawing.Point(431, 344);
             this.lblPrize.Name = "lblPrize";
             this.lblPrize.Size = new System.Drawing.Size(417, 51);
             this.lblPrize.TabIndex = 2;
@@ -110,9 +111,9 @@
             // pcbCup
             // 
             this.pcbCup.Image = global::WF01.Properties.Resources.cup;
-            this.pcbCup.Location = new System.Drawing.Point(460, 38);
+            this.pcbCup.Location = new System.Drawing.Point(457, 33);
             this.pcbCup.Name = "pcbCup";
-            this.pcbCup.Size = new System.Drawing.Size(359, 396);
+            this.pcbCup.Size = new System.Drawing.Size(359, 324);
             this.pcbCup.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbCup.TabIndex = 1;
             this.pcbCup.TabStop = false;
@@ -133,7 +134,7 @@
             this.RankList.GridLines = true;
             this.RankList.Location = new System.Drawing.Point(8, 6);
             this.RankList.Name = "RankList";
-            this.RankList.Size = new System.Drawing.Size(417, 450);
+            this.RankList.Size = new System.Drawing.Size(417, 389);
             this.RankList.TabIndex = 0;
             this.RankList.UseCompatibleStateImageBehavior = false;
             this.RankList.View = System.Windows.Forms.View.Details;
@@ -173,21 +174,36 @@
             this.Derrotas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Derrotas.Width = 36;
             // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulo.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lblTitulo.Location = new System.Drawing.Point(11, 9);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(313, 37);
+            this.lblTitulo.TabIndex = 2;
+            this.lblTitulo.Text = "ESTAGIO 2019 - GEOhub";
+            // 
             // Tabela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(864, 501);
+            this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.tabControl1);
             this.Name = "Tabela";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Liga GEOhub 2019";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Tabela_FormClosed);
             this.Load += new System.EventHandler(this.Tabela_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcbCup)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -206,5 +222,6 @@
         private System.Windows.Forms.PictureBox pcbCup;
         private System.Windows.Forms.Label lblPrize;
         private System.Windows.Forms.Label lblCampeao;
+        private System.Windows.Forms.Label lblTitulo;
     }
 }

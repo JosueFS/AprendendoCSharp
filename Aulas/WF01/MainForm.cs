@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace ESTAGIO
 {
-    public partial class MainForm : Form
+    public partial class MainForm : MetroFramework.Forms.MetroForm
     {
         public static int qtdTimes;
         public static List<Times> ListaTimes = new List<Times>();
