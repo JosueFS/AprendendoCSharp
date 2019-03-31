@@ -25,7 +25,7 @@ namespace ESTAGIO
             LinkLabel.Link url = new LinkLabel.Link();
 
             //Atribuindo valor ao link
-            url.LinkData = "https://github.com/JosueFS/AprendendoCSharp";
+            url.LinkData = "https://github.com/JosueFS/AprendendoCSharp/tree/master/Aulas/WF01";
 
             //Configurando o label do form para receber o link acima
             linkGit.Links.Add(url);
