@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WF01.Properties
+namespace ESTAGIO.Properties
 {
 
 

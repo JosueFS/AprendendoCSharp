@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WF01
+namespace ESTAGIO
 {
     public partial class Tabela : Form
     {
@@ -27,10 +27,16 @@ namespace WF01
             //    }
             //}
         }
+
+        // TODO: CLASSIFICAÇÃO DOS TIMES
+        // TODO: CALCULO DOS PONTOS
+
         private void Tabela_Load(object sender, EventArgs e)
         {
             var dados = new Dados();
             dados.NewRound(tabPage1, MainForm.rodadas, tabPage1);
+            dados.Rank(MainForm.ListaTimes, RankList, lblCampeao);
+            
         }
 
         private void Tabela_FormClosed(object sender, FormClosedEventArgs e)
@@ -47,7 +53,5 @@ namespace WF01
             Dados.PosY = 10;
             while (page.Controls.Count > 0) page.Controls[0].Dispose();
         }
-
-
     }
 }

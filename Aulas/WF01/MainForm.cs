@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace WF01
+namespace ESTAGIO
 {
     public partial class MainForm : Form
     {
@@ -35,7 +35,11 @@ namespace WF01
         private void GerarTabela(object sender, EventArgs e)
         {
             LerTimes();
-            rodadas = new Jogos().CriarJogos(rodadas, ListaTimes);
+            if (checkShuffle.Checked)
+            {
+                ListaTimes.Shuffle();
+            }
+            rodadas = new Jogos().CriarJogos(rodadas, ListaTimes, checkShift.Checked);
             var t = new Tabela();
             t.Show();
         }
@@ -71,8 +75,8 @@ namespace WF01
                 if (item.Selected && item.SubItems.Count > 0 )
                 {
                     lvTimes.Items.Remove(item);
-                    int indexT = ListaTimes.FindIndex(x => x.Nome == item.SubItems[0].Text && x.Local == item.SubItems[1].Text);
-                    ListaTimes.RemoveAt(indexT);
+                    //int indexT = ListaTimes.FindIndex(x => x.Nome == item.SubItems[0].Text && x.Local == item.SubItems[1].Text);
+                    //ListaTimes.RemoveAt(indexT);
                 }
             }
             qtdTimes = ListaTimes.Count;
@@ -111,11 +115,6 @@ namespace WF01
                     Local = t.SubItems[1].Text
                 });
             }
-        }
-        private void lblTitulo_Click(object sender, EventArgs e)
-        {
-            qtdTimes = ListaTimes.Count;
-            MessageBox.Show("" + qtdTimes);
         }
     }
 }

@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace WF01
+namespace ESTAGIO
 {
     public class Elements
     {
